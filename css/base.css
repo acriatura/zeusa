@@ -1,0 +1,1227 @@
+    /*CORES*/
+    :root {
+--fundo-color: #FAF7F2;
+--fundosecundario-color: #EFE9E2;
+--fundolabels-color: #D8D1C8;
+
+
+--cor-principal-escura: #000128;
+--cor-principal-media: #4A4D5B;
+--cor-principal-destaque: #1334C4;
+--cor-principal-clarinha: #1969FF;
+--cor-principal-clara-clara: #D8552D;
+
+--cor-extra-destaques: #FF6936;
+}
+      
+      /*
+      var(--fundo-color)
+      var(--txtprincipal-color)
+      var(--txtsecundario-color)
+      var(--primary-color)
+      var(--secundaria-color)
+      var(--desataque-color)
+      */
+
+
+      body{
+        background-color: var(--fundo-color);
+      }
+      
+      h1, h2, h3, h4, h5, h6{
+        color: var(--cor-principal-escura);}
+      
+      .corcristiana{
+        /*background: linear-gradient(to right, #190A05, #B24625, #FF6435);*/
+        background: linear-gradient(to right, var(--cor-principal-escura), var(--cor-principal-destaque), var(--cor-principal-destaque), var(--cor-principal-clarinha));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .cortitulo-projetos{
+        color: var(--cor-principal-clara-clara);
+      }
+        p{
+        color: var(--cor-principal-media);}
+
+
+      .btn.botoesprincipais 
+      {      
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--fundo-color);
+        --bs-btn-hover-color: var(--fundo-color);
+        --bs-btn-bg: var(--cor-principal-destaque);
+        --bs-btn-hover-bg: var(--cor-principal-destaque);
+        --bs-btn-border-color: var(--cor-principal-destaque);       
+      }
+      .btn.botoesprincipais:hover {
+        opacity: 0.75;
+        transition: opacity 0.95s ease;
+      }
+      .btn.botoessecundarios 
+      {      
+        
+        --bs-btn-color: var(--cor-principal-destaque);    
+        --bs-btn-hover-color: var(--cor-principal-destaque);   
+        --bs-btn-border-color: var(--cor-principal-destaque) !important;
+        --bs-btn-hover-border-color: var(--cor-principal-destaque);       
+      }
+      .btn.botoessecundarios:hover {
+        opacity: 0.85;
+        transition: opacity 0.5s ease;
+        background-color: var(--fundosecundario-color);
+      }
+
+      .txtfooter{
+        color: var(--cor-principal-media);
+      }
+    
+
+        /*
+      .botoesprincipais:hover
+      { color: var(--fundo-color);
+        background-color: rgb(var(--botoesprincipais), 0.8) !important;}
+*/
+
+
+
+      /*Bolinha a seguir cursor*/
+#cursor-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#cursor-ball {
+  width: 12px;
+  height: 12px;
+  background-color: var(--cor-extra-destaques);
+  opacity: 90%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.12s ease-out;
+}
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .container-narrow-projeto{
+          max-width: 1000px;
+          margin: 0 auto;
+      }
+
+    /*NAVBAR*/
+    .cantosnavbar {
+    border-top-left-radius:0px;
+    border-bottom-left-radius:6px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:6px;
+    background-color: var(--fundo-color) !important;
+    border-bottom: 1px solid var(--fundosecundario-color) !important;
+    }
+    .navbar-brand{
+      color: var(--cor-principal-escura) !important;
+    }
+
+
+      /*SCROL - SECÇÕES*/
+      #sobre,
+      #projetos,
+      #contactos {
+        scroll-margin-top: 120px; /* ajusta ao tamanho da tua navbar */
+      }
+
+      /*Idioma*/
+      /* Espaço e estilo */
+      .lang-switcher {
+        cursor: pointer;
+        margin-right: 30%;
+      }
+
+      .lang-option {
+        padding: 0 3px;
+      }
+
+      .lang-option.active {
+        text-decoration: underline var(--cor-principal-media);
+        text-underline-offset: 5px;
+        color: var(--cor-principal-escura);
+      }
+      /**/
+
+      .botoesnav {
+        display: inline-block;
+        position: relative;
+        color: var(--cor-principal-media) !important;
+        }
+        .botoesnav:hover{
+        color: var(--cor-principal-escura) !important;
+        }
+        .botoesnav::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 5px;
+        left: 2px;
+        background-color: var(--cor-principal-destaque);
+        border-radius: 20px;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+        }
+
+        .botoesnav:hover::after {
+        transform: scaleX(0.9);
+        transform-origin: bottom left;
+        }
+      
+      .outline-button {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 30px;
+        background-color: var(--fundolabels-color);
+        }
+        .outline-button-projetos {
+        border-style: solid;
+        background-color: var(--fundo-color) !important;
+        }
+     
+      
+      .fundocards {
+        background-color: var(--fundosecundario-color);
+        border-color: var(--cor-principal-media);
+        border-radius: 20px;
+      }
+      .fundocardscontactos {
+        background-color: var(--fundosecundario-color);
+        border-color: var(--cor-principal-escura);
+        border-radius: 20px;
+      }
+      .fundocardscontactos:hover {
+        background-color: var(--fundo-color);
+      }
+      .fundocardscontactos:hover .setarodadois{
+        color: var(--cor-principal-destaque)
+      }
+      .fundocardscontactos:hover .linkcontactos{
+        color: var(--cor-principal-destaque)
+      }
+
+      .corfundocontainerdois{
+        background-color: var(--fundosecundario-color);
+      }
+
+      /*Botões*/
+
+      .btn-circuloum {
+          width: 45px;
+          height: 45px;
+          border-color: var(--cor-principal-media);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          cursor: pointer;
+          justify-content: center;
+
+          margin: 0 auto;      /* 🔥 garante centro horizontal */
+          display: block;      /* 🔥 faz o auto funcionar */
+
+          animation: mover 1.5s ease-in-out infinite;
+      }
+      .btn-circuloum:hover {
+          border-color: var(--cor-principal-destaque) !important;
+          background-color: var(--fundosecundario-color);
+      }
+      .setaflutuar {
+        font-size: 35px; 
+        color: var(--cor-principal-media);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .setaflutuar:hover {
+        color: var(--cor-principal-destaque);
+      }
+
+      @keyframes mover {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+          }
+      
+
+      /*Botão rodar 45º*/
+      .btn-circulodois {
+          width: 60px;
+          height: 60px;
+          border-color: var(--cor-principal-media);
+          border-radius: 50%;
+
+    
+          text-decoration: none;
+          cursor: pointer;
+       
+
+          float: right;
+      }
+
+      .setaroda {
+        font-size: 50px; 
+        color: var(--cor-principal-media);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transform: rotate(-45deg);
+
+        transition: transform 0.5s ease;
+      }
+    /* Quando passa o rato por cima do card */
+    .funfocardfariseu:hover .btn-circulodois {
+      border-color: var(--cor-principal-destaque);
+      background-color: var(--fundo-color);
+    }
+    /* Anima a seta quando o card é hover */
+    .funfocardfariseu:hover .setaroda {
+      color: var(--cor-principal-destaque);
+    }
+    
+    /* Quando passa o rato por cima do card */
+    .funfocardcoaaumentado:hover .btn-circulodois {
+      border-color: var(--cor-principal-destaque);
+      background-color: var(--fundo-color);
+    }
+    /* Anima a seta quando o card é hover */
+    .funfocardcoaaumentado:hover .setaroda {
+      color: var(--cor-principal-destaque);
+    }
+
+    /* Quando passa o rato por cima do card */
+    .funfocardmintas:hover .btn-circulodois {
+      border-color: var(--cor-principal-destaque);
+      background-color: var(--fundo-color);
+    }
+    /* Anima a seta quando o card é hover */
+    .funfocardmintas:hover .setaroda {
+      color: var(--cor-principal-destaque);
+    }
+
+    .card-title{
+      color: var(--cor-principal-escura);
+    }
+    .funfocardfariseu:hover .card-title {
+      color: var(--cor-principal-destaque);
+    }
+    .funfocardfariseumais:hover .card-title {
+      color: var(--cor-principal-destaque);
+    }
+    .funfocardcoaaumentado:hover .card-title {
+      color: var(--cor-principal-destaque);
+    }
+    .funfocardcoaaumentadomais:hover .card-title {
+      color: var(--cor-principal-destaque);
+    }
+    .funfocardmintas:hover .card-title {
+      color: var(--cor-principal-destaque);
+    }
+    .funfocardmintasmais:hover .card-title {
+      color: var(--cor-principal-destaque);
+    }
+    /*MAIS*/
+    /* Quando passa o rato por cima do card */
+    .funfocardfariseumais:hover .btn-circulodois {
+      border-color: var(--cor-principal-destaque);
+      background-color: var(--fundo-color);
+    }
+    /* Anima a seta quando o card é hover */
+    .funfocardfariseumais:hover .setaroda {
+      color: var(--cor-principal-destaque);
+    }
+    /* Quando passa o rato por cima do card */
+    .funfocardcoaaumentadomais:hover .btn-circulodois {
+      border-color: var(--cor-principal-destaque);
+      background-color: var(--fundo-color);
+    }
+    /* Anima a seta quando o card é hover */
+    .funfocardcoaaumentadomais:hover .setaroda {
+      color: var(--cor-principal-destaque);
+    }
+    /* Quando passa o rato por cima do card */
+    .funfocardmintasmais:hover .btn-circulodois {
+      border-color: var(--cor-principal-destaque);
+      background-color: var(--fundo-color);
+    }
+    /* Anima a seta quando o card é hover */
+    .funfocardmintasmais:hover .setaroda {
+      color: var(--cor-principal-destaque);
+    }
+      
+      
+
+      .botaolaconversar {
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .btn-style3:hover .setaroda {
+        transform: rotate(0deg);
+      }
+      .btn-style3 {
+        transform: translateY(0);
+        transition: transform 2s ease; /* Aqui é o importante */
+        &:hover {
+          transform: translateY(-0.35em);
+          transition-duration: 1s;
+          box-shadow: 0 0 2em 1em var(--cor-extra-destaques);
+          background-color: var(--fundo-color);
+        }
+      }
+
+
+      
+      .setarodadois {
+        font-size: 50px; 
+        color: var(--cor-principal-media);
+        display: flex;
+        transform: rotate(-45deg);
+
+        transition: transform 0.5s ease;
+      }
+      .btn-style3:hover .setarodadois {
+        transform: rotate(0deg);
+      }
+
+      
+
+
+      /*Fontes*/
+      .fontserifbase{
+        font-family: "Fraunces", serif;
+      }
+      .fontserifada {
+        font-family: "Fraunces", serif;
+        font-size: clamp(50px, 10vw, 100px);
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      .cristiana{
+        font-family: "Fraunces", serif;
+        font-style: italic;
+        color: var(--cor-principal-clarinha);
+      }
+      .primeirotexto-projetos {
+        color: var(--cor-principal-escura);
+        letter-spacing: 2.5px;
+        font-size: 13.33px;
+      }
+
+      h2{
+        font-size: clamp(33px, 4vw, 50px);
+      }
+      h3{
+        font-size: clamp(29px, 4vw, 37px);
+      }
+
+      .primeirotexto{
+        letter-spacing: 2.5px;
+        font-size: 13.33px;
+        color: var(--cor-principal-destaque);
+        font-weight: 500;
+      }
+      .primeirotextohero{
+        letter-spacing: 2.5px;
+        font-size: 13.33px;
+        color: var(--cor-principal-media);
+        font-weight: 470;
+      }
+      .texto-menosp{
+        font-size: 13.33px;
+        color: var(--cor-principal-escura);
+      }
+    
+  
+    
+      .p400{
+        font-weight: 400;
+      }
+      .p500{
+        font-weight: 500;
+      }
+      .tamtitulo{
+        font-size: clamp(16px, 10vw, 23.04px);
+      }
+
+
+      /*Medidas*/
+      /*HERO!*/
+      .alrurahero{
+        height: 100vh;
+      }
+           
+      .entresechero {
+        margin-bottom: 130px;
+      }
+
+
+      /*Espaços*/
+      .esptitulo{
+        padding-top: 2%;
+      }
+      .esplead{
+        padding-top: -2%;
+      }
+      .espbtnhero{
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+      .espentrebtnhero{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        text-align: center;
+        border-radius: 40px;
+        margin: 10px;
+      }
+      .espentrebtnsobre{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        text-align: center;
+        border-radius: 40px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .espsetafluar{
+        padding-top: 5%;
+      }
+      .btnola{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        align-items: center;
+        text-align: center;
+        border-radius: 40px;
+      }
+
+      .entresecum {
+        padding-top: 55px;
+        padding-bottom: 130px;
+      }
+      .entresec {
+        padding-top: 130px;
+        padding-bottom: 130px;
+      }
+      .entresecaprprojeto{
+        padding-top: 190px;
+        padding-bottom: 130px;
+      }
+
+      .entrep {
+        padding-top: 2.5%;
+      }
+      .entrepblocosimagens {
+        padding-top: 7%;
+      }
+      .entrepprojetosdois {
+        padding-top: 0.5%;
+        padding-bottom: 2.5%;
+      }
+      .entrepprojetostxtdois {
+        padding-top: 0.5%;
+      }
+      .entrepgeralprojeto{
+        padding-top: 130px;
+      }
+      .semespaço-geral-projetos{
+        padding: 0;
+      }
+      .paragrafo-geral{
+        font-size: clamp(16px, 2.5vw, 18px);
+      }
+      .entrep-ideias{
+        padding-bottom: 5%;
+      }
+      /*Mesma altura para cards*/
+            .altura-igual-cards {
+          display: flex;
+          align-items: stretch;
+      }
+      
+      
+
+      /*CARDS - SOBRE MIM*/
+      .medidascardsobre {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 1.7%;
+        padding-bottom: 0.2%;
+      }
+      .cardsobreentrelabels {
+        margin-left: 1%;
+      }
+
+      .botao-wrapmintas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* espaço entre eles, tanto lado a lado como por baixo */
+      }
+
+      .botao-wrapmintas p {
+        margin: 0; /* garante que o spacing vem só do gap */
+      }
+      .cardtitulolabels {
+        padding-bottom: 1.7%;
+      }
+      .cardsobremobile{
+        margin-top: 5%;
+        margin-left: 2%;
+      }
+      .cardsobremobile-projetos{
+        margin-left: 30%;
+      }
+      
+
+      .cortxt-card-resultados{
+        color: var(--cor-extra-destaques);
+      }
+
+      /*CADRS - PROJETOS*/
+      .cardsprojetos{margin-top: 5%; border-color: var(--cor-principal-escura); background-color: var(--fundosecundario-color);}
+      .cardprojetosentrep {padding-top: 1.5%;}
+      .cardprojetosentrelabels {margin-left: 1%;}
+      .entrepbaixo {padding-bottom: 1%;}
+      .entrepbaixo-desafio {padding-bottom: 5%;}
+      .txtprojetoslabels {font-size: 13.33px; color: var(--cor-principal-escura);}
+      .txtprojetoslabels-apresentacao {font-size: 13.33px; color: var(--cor-principal-media);}
+      .txtprojetoslabels-projeto {color: var(--cor-principal-escura);}
+      .cardsprojetos-desafios {margin-top: 5%;}
+
+      .medidascardprojetos{
+        padding-left: 3%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 0%;
+      }
+    .funfocardfariseu{
+      background-image: url("../imagens/fariseuaumentado/homefa.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-color: var(--fundo-color);
+      overflow: hidden;
+    }
+    .funfocardfariseumais{
+      background-image: url("../imagens/fariseuaumentado/maisprojetos-fa.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-color: var(--fundosecundario-color);
+      overflow: hidden;
+    }
+    .funfocardcoaaumentado{
+      background-image: url("../imagens/coaaumentado/homeca.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-color: var(--fundo-color);
+      overflow: hidden;
+    }
+    .funfocardcoaaumentadomais{
+      background-image: url("../imagens/coaaumentado/maisprojetos-ca.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-color: var(--fundosecundario-color);
+      overflow: hidden;
+    }
+    .funfocardmintas{
+      background-image: url("../imagens/mintas/homemintas.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-color: var(--fundo-color);
+      overflow: hidden;
+    }
+    .funfocardmintasmais{
+      background-image: url("../imagens/mintas/maisprojetos-mintas.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-color: var(--fundosecundario-color);
+      overflow: hidden;
+    }
+    .linkscardsprojetos{
+      text-decoration: none;
+    }
+    .btn-style3fa:hover .setaroda {
+        transform: rotate(0deg);
+      }
+      .btn-style3fa {
+        transform: translateY(0);
+        transition: transform 2s ease; /* Aqui é o importante */
+        &:hover {
+          transform: translateY(-0.35em);
+          transition-duration: 1s;
+          box-shadow: 0 0 5em 0.5em var(--cor-extra-destaques);
+          border-color: var(--cor-principal-media);
+          /*background-image: url("../imagens/fariseuaumentado/fariseuaumentadohome.gif");*/
+          background-color: var(--fundosecundario-color);
+          overflow: hidden;
+        }
+      }
+      .btn-style3fa:hover .setarodadois {
+        transform: rotate(0deg);
+      }
+
+      /*RA VALE HOVER*/
+      .btn-style3ravale{
+        position: relative;
+        display: inline-block;
+        overflow: hidden; /* impede que texto/imagem saiam da caixa */
+        transform: translateY(0);
+        transition: transform 2s ease;
+        overflow: hidden; /* IMPORTANTE para cortar tudo aos cantos */
+        border-radius: 12px; /* 👉 cantos redondos aplicados ao container */
+        border: 2px solid var(--cor-principal-destaque) !important; /* 👈 SEMPRE visível */
+      }
+      .btn-style3ravale:hover {
+        transform: translateY(-0.35em);
+        transition-duration: 1s;
+        box-shadow: 0 0 5em 0.1em var(--cor-extra-destaques);
+        border-radius: 12px; /* 👉 cantos redondos aplicados ao container */
+      }
+      .hover-textravale {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-size: clamp(16px, 2.5vw, 18px);
+        font-weight: bold;
+        color: var(--fundo-color) !important;
+        text-align: center;
+        transition: opacity 0.4s ease;
+        pointer-events: none; /* não bloqueia clicks */
+      }
+
+      .btn-style3ravale:hover .hover-textravale {
+        opacity: 1;
+     
+      }
+      .image-defaultravale {
+        width: 100%;
+        transition: opacity 0.4s ease;
+      }
+
+      .btn-style3ravale:hover .image-defaultravale {
+        opacity: 0.25; /* 👉 torna a imagem semi-transparente */
+      }
+      /*fim RA VALE*/
+
+      .espcardcimahome{
+        margin-top: 2.5%;
+      }
+
+      /*Contactos*/
+      .espteldireita {
+        margin-left: 2.5%;
+      }
+      .linkcontactos{
+        text-decoration: none;
+        color:var(--cor-principal-escura);
+      }
+      .txtcontactos{
+        font-size: 13.33px;
+        color: var(--cor-principal-media);
+      }
+
+      .medidascardcontactos{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+      .quadradoiconcontactos{
+        background-color: var(--fundolabels-color);
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 15%;
+        font-size: 35px;
+      }
+      .coriconcontactos{
+        color: var(--cor-principal-escura);
+      }
+      .coricon-projetos{
+        color: var(--cor-principal-clara-clara);
+      }
+
+      .iconelinkdin {
+        border-radius: 15%;
+        font-size: 35px;
+        color: var(--cor-principal-escura);
+        vertical-align: middle;
+      }
+      .iconelinkdin:hover {
+        color: var(--cor-principal-destaque);
+      }
+      
+      .espcardcimahomecontactos{
+        margin-top: 2.5%;
+      }
+      .medidasbaixocontactos{
+       margin: 0px;
+      }
+
+
+
+      /*Página projetos*/
+      .video-wrapper-fa {
+    width: 100%;
+    max-width: 100%; /* se queres margem */
+    margin: 0 auto; /* centra a wrapper */
+    
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+    #bg-video-fa {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+
+/*COA AUMENTADO*/
+.video-wrapper-ca {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-video-ca {
+    width: 70%;      /* ocupa a largura total */
+    height: auto;     /* mantém proporção original */
+    object-fit: contain;
+    display: block;
+    border-radius: 12px; /* já tens a classe rounded */
+}
+.media-contentca {
+  width: 100% !important;
+  height: auto !important; /* NÃO força altura */
+  object-fit: cover !important;
+  border-radius: 12px !important;
+}
+.media-contentcaum {
+  width: 100% !important;
+  height: auto !important; /* NÃO força altura */
+  object-fit: cover !important;
+}
+
+.row-ca-align {
+  min-height: 100%;    /* permite que as colunas tenham a mesma referência */
+  display: flex;
+  align-items: center; /* centraliza verticalmente TUDO dentro do row */
+}
+
+
+
+    /*IMAGENS APRESENTAÇAO MINTAS*/
+.video-wrapper-mintas {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#bg-video-mintas {
+    width: 100%;      /* ocupa a largura total */
+    height: auto;     /* mantém proporção original */
+    object-fit: contain;
+    display: block;
+    border-radius: 12px; /* já tens a classe rounded */
+}
+
+.centrarconteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corfundoimagensmintas {
+  background-color: var(--cor-principal-escura);
+}
+
+.txt-claro-titulo{
+  color: var(--cor-extra-destaques);
+}
+.txt-claro{
+  color: var(--fundo-color);
+}
+
+
+/* Caixa padrão */
+.media-boxmintas {
+  border-radius: 12px;
+  background-color: var(--fundosecundario-color) !important;
+}
+
+/* Imagens */
+.media-contentmintas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Preenche sempre o bloco */
+  border-radius: 12px !important;
+}
+
+/* Todas as colunas da mesma altura */
+.equal-cols {
+  display: flex;
+  align-items: stretch; /* garante que todas as colunas têm a mesma altura */
+}
+
+
+.equal-cols > .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;        /* cada coluna ocupa igualmente o espaço disponível */
+  min-height: 0;      /* IMPORTANTE para permitir que filhos com height:100% funcionem */
+  gap: 0;             /* por defeito; vamos aplicar gap só à coluna do meio */
+}
+
+
+/* Alturas */
+.full-height,
+.half-height {
+  flex: 1 !important; /* cada bloco ocupa a parte certa da coluna */
+  display: flex !important;
+}
+
+.half-height {
+  flex: 1 1 50%;
+  display: flex !important;
+}
+
+.half-height + .half-height {
+  margin-top: 0px !important; /* espaçamento sem interferir na altura */
+}
+/* Adicionar espaçamento interno apenas à coluna do meio */
+.col-lg-4.d-flex.flex-column {
+  gap: 20px; /* espaço entre as duas imagens */
+}
+
+/* Cores */
+.bg1 { background: #fef2e4; }
+.bg2 { background: #e4f7fe; }
+.bg3 { background: #e7ffe4; }
+.bg4 { background: #f0e4ff; }
+
+/*FIM IMAGENS APRESENTAÇAO MINTAS*/
+
+    
+
+    /* Linha horizontal */
+.titulo-desafio {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* espaço entre ícone e texto */
+}
+
+.subtitulo-etapas {
+    display: flex;
+    align-items: flex-start;   /* mantém no topo */
+}
+.espnumerosetapas{
+margin-left: 5px;
+}
+/* Quadrado à volta do ícone */
+.icon-wrapperdesafio {
+        background-color: var(--fundolabels-color);
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 15%;
+        font-size: 35px; 
+}
+/* Quadrado à volta do ícone */
+.icon-wrappernumeros {
+        background-color: var(--fundolabels-color);
+        width: 45px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 15%;
+        font-size: 20px;
+        font-weight: 200;
+}
+
+.txtcentrado{
+  display: flex;
+  text-align: center;
+}
+
+
+.cardsprojetos .row:last-child {
+  margin-top: auto;
+}
+
+/* Caixa externa com altura fixa ou responsiva */
+.media-boxfa {
+    
+    height: 75vh;          /* ocupa 75% da altura do ecrã */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;      /* evita scroll interno */
+}
+
+/* Força imagem e vídeo a ocupar exatamente a mesma altura */
+.media-contentfa {
+    max-height: 100%;      /* limita pela altura */
+    max-width: 100%;       /* limita pela largura */
+    object-fit: contain;   /* mantém proporção SEM cortar */
+    display: block;
+}
+
+      /*MEDIA QUERIES*/
+      /* ===== DESKTOP DEFAULT ===== */
+.alturatotalvert {
+  margin-top: 200px;
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== LARGE SCREENS (≥2000px) ===== */
+@media (min-width: 2000px) {
+  .alturatotalvert {
+    margin-top: 350px;
+    height: calc(100vh - 350px);
+  }
+  .espsetafluar {
+    padding-top: 10%;
+  }
+
+  #bg-video-fa {
+        height: 100%;
+    }
+}
+
+/* qualquer iPad */
+@media (min-width: 768px) and (max-width: 1366px) {
+  .alturatotalvert {
+    margin-top: 220px;
+    height: calc(100vh - 220px);
+  }
+  .espsetafluar {
+    padding-top: 15%;
+  }
+  #bg-video-fa {
+        height: 100%;
+    }
+}
+
+/* ===== TABLET (≤992px) ===== */
+@media (max-width: 992px) {
+  .espteldireita { margin-left: 0; margin-top: 3%; }
+  .cardsobremobile { margin-top: 10%; margin-left: 0; }
+  .cardsobremobile-projetos{margin-left: 0%; padding-left: 0%;}
+  .cardmaisprojetosmobile {margin-top:10%;}
+  .cardsprojetos { margin-top: 10%; }
+  .cardsprojetos-desafios { margin-top: 10%; }
+  .linkcontactos { font-size: 14px; }
+  .espsetafluar { padding-top: 15%; }
+  .entrep-projetos-mobile {
+        padding-top: 7%;
+      }
+  .entrep-ideias{
+        padding-bottom: 3%;
+      }
+
+  .alturatotalvert {
+    margin-top: 350px;
+    height: calc(100vh - 350px);
+  }
+
+  #sobre,
+      #projetos,
+      #contactos {
+        scroll-margin-top: 150px; /* ajusta ao tamanho da tua navbar */
+      }
+  
+  .lang-switcher {
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          border-top: 1px var(--cor-principal-escura);
+          margin-left: 0;
+        }
+  #bg-video-fa {
+        height: 100%;
+    }
+
+  .espmobileblocos{padding-top: 15%;}
+  .entrepblocosimagens{padding-top: 15%;}
+}
+
+/* ===== MOBILE (≤576px) ===== */
+@media (max-width: 576px) {
+  .alturatotalvert {
+    margin-top: 140px;
+    height: calc(100vh - 140px);
+  }
+  #bg-video-fa {
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    /*Mesma altura para cards
+            .altura-igual-cards {
+          display: flex;
+          align-items: stretch;
+      }*/
+}
+
+
+/*Lista Números Página Projetos - Etapas Processo*/
+
+.numero span {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.conteudo h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.conteudo p {
+  margin: 4px 0 0;
+}
+
+/* 1) comportamento previsível para todos */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* 2) certificar que cada .etapa é um flex container alinhado pelo topo */
+.row.entrep .etapa,
+.etapa {
+  display: flex !important;         /* garante que é flex mesmo que outra regra tenha sobrescrito */
+  align-items: flex-start !important;/* alinhar pelo topo */
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* 3) tornar .numero fixo e não afetado pelo conteúdo */
+.etapa .numero {
+  flex: 0 0 50px !important;  /* largura fixa, não encolhe/não cresce */
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  border-radius: 4px;
+  background: var(--fundolabels-color);
+  color: var(--cor-principal-clara-clara);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+.numero{
+  font-weight: 800;
+}
+
+/* 4) forçar que .numero fique no topo da .etapa no caso de conflitos */
+.etapa .numero { align-self: flex-start !important; }
+
+/* 5) conteúdo ocupa restante espaço e permite quebra de linhas */
+.etapa .conteudo {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;      /* CRUCIAL: permite que o flex item quebre em vez de empurrar o .numero */
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important; /* fallback para palavras longas */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+/* 6) reset de margens para evitar deslocamentos */
+.etapa .conteudo h5 { margin: 0 0 6px 0; padding: 0; }
+.etapa .conteudo p  { margin: 0; padding: 0; }
+
+/* 7) reduzir o quadrado em mobile se necessário */
+@media (max-width: 576px) {
+  .etapa .numero {
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+  }
+  .etapa .numero span { font-size: 0.95rem !important; }
+}
+
+/*
+.icnaprendizagens
+.linktopo
+.destaquestxt
+*/
+
+.linktopo{
+  text-decoration: none;
+  color: var(--cor-principal-media);
+    }
+.linktopo:hover{
+  text-decoration: none;
+  color: var(--cor-principal-destaque);
+    }
+
+.icnaprendizagens{
+color: var(--cor-principal-clara-clara);
+}
+
+.destaquestxt{
+  color: var(--cor-principal-escura);
+}

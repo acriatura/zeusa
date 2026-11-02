@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cristiana - researcher and designer of digital experiences with augmented technologies. 
+    Dimensions | Augmented Reality; UX; UI; Interaction; HCI">
+    <meta name="keywords" content="UX, Augmented Reality, AR, MX, UI, HCI, interaction, digital experience, museography, usability, designer, museografia, museologia, experiências digitais, usabilidade">
+    <meta name="author" content="Cristiana da Oliveira">
+    <link rel="icon" href="imagens/iconbarra.png"> <!--colocar o símbolo da tenda do logo-->
+    
+    <title>Cristiana da Oliveira</title>
+        
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+
+    <!-- CSS template navbar-->
+    <link href="css/navbars.css" rel="stylesheet">
+
+    <!--CSS base-->
+    <link href="css/base.css" rel="stylesheet">
+
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <!--Icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+    </style>
+
+
+  </head>
+ 
+<!--IDIOMA-->
+ <script src="js/alturanavbar.js"></script>
+ <!--Bolinha Laranja-->
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.getElementById("cursor-wrapper");
+  const ball = document.getElementById("cursor-ball");
+
+  document.addEventListener("mousemove", (e) => {
+    wrapper.style.left = e.clientX + "px";
+    wrapper.style.top = e.clientY + "px";
+  });
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+    const scale = 1 + (scrollTop / maxScroll) * 3;
+    ball.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  });
+});
+</script>
+
+  <body>
+  <!--Bolinha a seguir cursor-->
+  <div id="cursor-wrapper">
+  <div id="cursor-ball"></div>
+</div>
+
+
+    <!--HEADER !!!-->
+    <header data-bs-theme="light">
+      <!--NAV ecrãs XXL / XL / L-->
+      <div class="d-none d-xxl-block d-xl-block d-lg-block">
+      <nav
+          class="navbar fixed-top navbar-expand-lg bg-body-tertiary cantosnavbar container-fluid"
+          aria-label="Thirteenth navbar example">
+          <div class="container">
+            <!--Coluna 1
+            <a class="navbar-brand" href="#"><i class="bi bi-device-ssd"></i></a>-->
+            
+            <div
+              class="collapse navbar-collapse d-lg-flex"
+              id="navbarSupportedContent"
+            >
+            <!--Coluna 2-->
+              <a class="navbar-brand col-lg me-0 fontserifbase" href="index.html">Cristiana da Oliveira</a>
+              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                <li class="nav-item"><a class="nav-link botoesnav" data-i18n="nav.sobre" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link botoesnav" data-i18n="nav.projetos" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link botoesnav" data-i18n="nav.contactos" href="#contactos">Contactos</a></li>
+              </ul>
+
+              <!--Coluna 3-->
+              <div class="d-lg-flex col-lg justify-content-lg-end">
+              <!--IDIOMA-->
+              <!-- PT / EN -->
+              <div class="lang-switcher navbar-text">
+                <span class="lang-option nav-item" data-lang="pt">Pt</span> |
+                <span class="lang-option nav-item" data-lang="en">En</span>
+              </div>
+                <!--Botão-->
+                <a href="mailto:cristianadaoliveira@gmail.com"><button class="btn botoesprincipais botaolaconversar btnola" data-i18n="nav.dizola">Diz olá <i class="bi bi-emoji-smile"></i></button></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--NAV ecrãs abaixo de L-->
+      <div class="d-block d-xxl-none d-xl-none d-lg-none">
+      <nav
+          class="navbar fixed-top navbar-expand-lg bg-body-tertiary cantosnavbar container-fluid"
+          aria-label="Thirteenth navbar example">
+          <div class="container">
+
+            <a class="navbar-brand fontserifbase" href="#"><!--<i class="bi bi-device-ssd"></i>-->Cristiana da Oliveira</a>
+            <button
+              class="navbar-toggler border border border-0 shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+        
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse d-lg-flex"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                <li class="nav-item"><a class="nav-link botoesnav" data-i18n="nav.sobre" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link botoesnav" data-i18n="nav.projetos" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link botoesnav" data-i18n="nav.contactos" href="#contactos">Contactos</a></li>
+              </ul>
+              <!--IDIOMA-->
+              <!-- PT / EN -->
+              <div class="lang-switcher navbar-text">
+                <span class="lang-option" data-lang="pt">PT</span> |
+                <span class="lang-option" data-lang="en">EN</span>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+
+
+    <!--MAIN!!!-->
+    <main>
+
+      <!--HERO - Apresentação-->
+      <section class="py-5 text-center container-fluid alturatotalvert alrurahero entresechero">
+      <div class="container">
+        <div class="row">
+          <p class="primeirotextohero" data-i18n="hero.primeirotexto">UX RESEARCH · DESIGNER · REALIDADE AUMENTADA</p>
+            <h1 class="fontserifada" data-i18n="hero.ola">Olá, sou a Cristiana</span></h1>
+            <p class="lead text-body-secondary p500 tamtitulo esptitulo" data-i18n="hero.posicao">xxx</b></p>
+        </div>
+          <div class="row esplead">
+            
+            <!--Ecrãs XXL / XL / L-->
+      <div class="d-none d-xxl-block d-xl-block d-lg-block">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <p class="lead text-body-secondary p400" data-i18n="hero.lead">
+              Acredito que a tecnologia deve ser desenhada em harmonia com todas 
+              as dimensões da vida, permitindo respostas significativas aos desejos, necessidades e objetivos das pessoas.
+            </p>
+          </div>
+      </div>
+      <!--Abaixo de L-->
+      <div class="d-block d-xxl-none d-xl-none d-lg-none">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <p class="text-body-secondary" data-i18n="hero.lead">
+              Acredito que a tecnologia deve ser desenhada em harmonia com todas 
+              as dimensões da vida, permitindo respostas significativas aos desejos, necessidades e objetivos das pessoas.
+            </p>
+          </div>
+      </div>
+
+
+          <div class="row espbtnhero">
+            <p class="lead text-body-secondary">
+              <a href="#projetos" class="btn botoesprincipais my-2 botaolaconversar espentrebtnhero" data-i18n="hero.botaoverprojetos">Ver projetos</a>
+              <a href="mailto:cristianadaoliveira@gmail.com" class="btn botoessecundarios my-2 botaolaconversar espentrebtnhero" data-i18n="hero.botaoentraremcontacto">Entrar em contacto</a>
+            </p>
+            <p class="espsetafluar">
+            <a href="#projetos" class="btn btn-circuloum"><i class="bi bi-arrow-down-short setaflutuar"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!--SOBRE MIM-->
+      <div class="container-fluid entresecum">
+        <div class="container">
+        <div class="row">
+
+          <div id="sobre" class="col-lg-6">
+            <p class="primeirotexto" data-i18n="sobre.sobremim">SOBRE MIM</p>
+            <h2 class="fontserifbase" data-i18n="sobre.tituloum">Design com propósito,<br>
+              <span class="cristiana">tecnologia com alma</span></h2>
+      <!--Ecrãs XXL / XL / L-->
+      <div class="d-none d-xxl-block d-xl-block d-lg-block">
+            <div class="row">
+              <div class="col-10">
+            <p class="entrep paragrafo-geral" data-i18n="sobre.pum">Sou investigadora e designer focada em criar experiências 
+              digitais que respeitam e potenciam a condição humana. 
+              O meu trabalho situa-se na interseção entre tecnologia, cultura e pessoas.</p>
+            <p class="entrepbaixo paragrafo-geral" data-i18n="sobre.pdois">Especializo-me em Realidade Aumentada aplicada ao património cultural, 
+              desenvolvendo projetos que transformam a forma como interagimos com espaços históricos e narrativas.</p>
+            <p class="entrepbaixo paragrafo-geral" data-i18n="sobre.ptres">Cada projeto é uma oportunidade para questionar como a tecnologia pode servir genuinamente as pessoas, 
+              não o contrário.</p>
+            <p class="entrep">
+              <a href="mailto:cristianadaoliveira@gmail.com" class="btn botoesprincipais my-2 botaolaconversar espentrebtnsobre" data-i18n="sobre.btnconversar">Vamos conversar</a>
+              <a href="CV_CristianadaOliveira.pdf" class="btn botoessecundarios my-2 espentrebtnhero">Download CV</a>
+            </p>
+          </div>
+            </div>
+      </div>
+
+            <!--Abaixo de L-->
+      <div class="d-block d-xxl-none d-xl-none d-lg-none">
+        <div class="row">
+              <div class="col-12">
+            <p class="entrep paragrafo-geral" data-i18n="sobre.pum">Sou investigadora e designer focada em criar experiências 
+              digitais que respeitam e potenciam a condição humana. 
+              O meu trabalho situa-se na interseção entre tecnologia, cultura e pessoas.</p>
+            <p class="entrepbaixo paragrafo-geral" data-i18n="sobre.pdois">Especializo-me em Realidade Aumentada aplicada ao património cultural, 
+              desenvolvendo projetos que transformam a forma como interagimos com espaços históricos e narrativas.</p>
+            <p class="entrepbaixo paragrafo-geral" data-i18n="sobre.ptres">Cada projeto é uma oportunidade para questionar como a tecnologia pode servir genuinamente as pessoas, 
+              não o contrário.</p>
+            <p class="entrep">
+              <a href="mailto:cristianadaoliveira@gmail.com" class="btn botoesprincipais my-2 botaolaconversar espentrebtnsobre" data-i18n="sobre.btnconversar">Vamos conversar</a>
+              <a href="#" class="btn botoessecundarios my-2 espentrebtnhero">Download CV</a>
+            </p>
+          </div>
+            </div>
+      </div>
+
+          </div>
+
+          <!--CARDS-->
+          <div class="col-lg-6">
+            <!--CARD UM-->
+            <div class="row">
+            <div class="card fundocards btn-style3 medidascardsobre cardsobremobile">
+              <div class="card-body">
+                <h5 class="card-title fontserifbase cardtitulolabels" data-i18n="sobre.cardinvestigacao">Research</h5>
+                <!--<p class="outline-button texto-menosp item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaoum">Go somewhere</p>-->
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaodois">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaotres">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaoquatro">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaocinco">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaoseis">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardinvestigacaosete">Go somewhere</p>
+              </div>
+            </div>
+            </div>
+
+            <!--CARD DOIS-->
+            <div class="row">
+            <div class="card fundocards btn-style3 medidascardsobre cardsobremobile">
+              <div class="card-body">
+                <h5 class="card-title fontserifbase cardtitulolabels" data-i18n="sobre.carddesign">Research</h5>
+                <p class="outline-button texto-menosp item ms-3 ms-md-0" data-i18n="sobre.carddesignum">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.carddesigndois">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.carddesigntres">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.carddesignquatro">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.carddesigncinco">Go somewhere</p>
+              </div>
+            </div>
+            </div>
+
+            <!--CARD TRES-->
+            <div class="row">
+            <div class="card fundocards btn-style3 medidascardsobre cardsobremobile">
+              <div class="card-body">
+                <h5 class="card-title fontserifbase cardtitulolabels" data-i18n="sobre.cardtecnologia">Research</h5>
+                <p class="outline-button texto-menosp item ms-3 ms-md-0" data-i18n="sobre.cardtecnologiaum">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardtecnologiadois">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardtecnologiatres">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardtecnologiaquatro">Go somewhere</p>
+                <p class="outline-button texto-menosp cardsobreentrelabels item ms-3 ms-md-0" data-i18n="sobre.cardtecnologiacinco">Go somewhere</p>
+              </div>
+            </div>
+            </div>
+
+
+          </div>
+
+       
+
+        </div>
+      </div>
+      </div>
+
+
+
+      <!--Projetos-->
+      <div class="container-fluid entresec corfundocontainerdois">
+
+        <div class="container">
+        <div class="row">
+        <div id="projetos" class="col-lg-6">
+            <p class="primeirotexto" data-i18n="projetos.projetos">PROJETOS</p>
+            <h2 class="fontserifbase" data-i18n="projetos.titulo">Trabalho selecionado</h2>
+
+            <!--Ecrãs XXL / XL / L-->
+      <div class="d-none d-xxl-block d-xl-block d-lg-block">
+            <div class="row">
+              <div class="col-10">
+            <p class="entrep paragrafo-geral" data-i18n="projetos.lead">Uma seleção de projetos que demonstram a minha abordagem à investigação e design centrado nas pessoas.</p>
+        </div>
+        </div>
+      </div>
+
+        <!--Abaixo de L-->
+      <div class="d-block d-xxl-none d-xl-none d-lg-none">
+        <div class="row">
+              <div class="col-12">
+            <p class="entrep paragrafo-geral" data-i18n="projetos.lead">Uma seleção de projetos que demonstram a minha abordagem à investigação e design centrado nas pessoas.</p>
+        </div>
+        </div>
+      </div>
+
+        </div>
+        </div>
+  
+        
+      
+          <!--CARD UM FA-->
+        <a href="fariseuaumentado.html" class="linkscardsprojetos">
+        <div class="fundocards btn-style3fa card p-3 funfocardfariseu espcardcimahome cardsprojetos">
+        <div class="row medidascardprojetos">
+          
+              <div class="card-body col-lg-9">
+                <p class="cardsubtituloprojetos txtprojetoslabels-apresentacao" data-i18n="apresentacaofa.dataspapel">2021 - 2025 | Project Leader & Researcher</p>
+                <h3 class="card-title fontserifbase" data-i18n="apresentacaofa.titulo">Fariseu Aumentado</h3>
+                <p class="cardprojetosentrep entrepbaixo" data-i18n="cardfa.lead">Serious game em Realidade Aumentada para exploração do património arqueológico do Vale do Côa. 
+                  Uma experiência imersiva que conecta visitantes à arte rupestre milenar.</p>
+                <div class="botao-wrapmintas">
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaofa.labelum">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaofa.labeldois">Go somewhere</p>
+                <!--<p class="outline-button txtprojetoslabels" data-i18n="apresentacaofa.labeltres">Go somewhere</p>-->
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaofa.labelquatro">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaofa.labelcinco">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaofa.labelseis">Go somewhere</p>
+                </div>
+              </div>
+              <div class="col-lg-3 align-self-center">
+                <p class="btn btn-circulodois justify-content-end"><i class="bi bi-arrow-right-short setaroda"></i></p>
+              </div>
+          
+        </div>
+        </div>
+        </a>
+
+        <!--CARD DOIS CA-->
+        <a href="coaaumentado.html" class="linkscardsprojetos">
+        <div class="fundocards btn-style3fa card p-3 funfocardcoaaumentado espcardcimahome cardsprojetos">
+        <div class="row medidascardprojetos">
+              <div class="card-body col-lg-8">
+                <p class="cardsubtituloprojetos txtprojetoslabels-apresentacao" data-i18n="apresentacaoca.dataspapel">2021 - 2025 | Project Leader & Researcher</p>
+                <h3 class="card-title fontserifbase" data-i18n="apresentacaoca.titulo">Côa Aumentado</h3>
+                <p class="cardprojetosentrep entrepbaixo" data-i18n="cardca.lead">Serious game em Realidade Aumentada para exploração do património arqueológico do Vale do Côa. 
+                  Uma experiência imersiva que conecta visitantes à arte rupestre milenar.</p>
+                <div class="botao-wrapmintas">
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaoca.labelum">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaoca.labeldois">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaoca.labelquatro">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaoca.labelcinco">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaoca.labelseis">Go somewhere</p>
+                </div>
+              </div>
+              <div class="col-lg-4 align-self-center">
+                <p class="btn btn-circulodois justify-content-end"><i class="bi bi-arrow-right-short setaroda"></i></p>
+              </div>
+        </div>
+        </div>
+        </a>
+
+        <!--CARD TRES MINTAS-->
+        <a href="mintas.html" class="linkscardsprojetos">
+        <div class="fundocards btn-style3fa card p-3 funfocardmintas espcardcimahome cardsprojetos">
+        <div class="row medidascardprojetos">
+              <div class="card-body col-lg-6">
+                <p class="cardsubtituloprojetos txtprojetoslabels-apresentacao" data-i18n="apresentacaomintas.dataspapel">2021 - 2025 | Designer gráfica</p>
+                <h3 class="card-title fontserifbase" data-i18n="apresentacaomintas.titulo">Mintas</h3>
+                <p class="cardprojetosentrep entrepbaixo" data-i18n="cardmintas.lead">Serious game em Realidade Aumentada para exploração do património arqueológico do Vale do Côa. 
+                  Uma experiência imersiva que conecta visitantes à arte rupestre milenar.</p>
+                <div class="botao-wrapmintas">
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaomintas.labelum">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaomintas.labeldois">Go somewhere</p>
+                <p class="outline-button txtprojetoslabels" data-i18n="apresentacaomintas.labelquatro">Go somewhere</p>
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <p class="btn btn-circulodois justify-content-end"><i class="bi bi-arrow-right-short setaroda"></i></p>
+              </div>
+        </div>
+        </div>
+        </a>
+
+
+        </div>
+        </div>
+
+      </div>
+
+      <!--Contactos-->
+      <div class="container-fluid entresec">
+
+        <div class="container">
+
+        <div class="row">
+        <div id="contactos" class="col-lg-6">
+            <p class="primeirotexto" data-i18n="contactos.contactos">CONTACTOS</p>
+            <h2 class="fontserifbase" data-i18n="contactos.titulo">Vamos criar algo <span class="cristiana">juntos?</span></h2>
+
+            <!--Ecrãs XXL / XL / L-->
+      <div class="d-none d-xxl-block d-xl-block d-lg-block">
+            <div class="row">
+              <div class="col-10">
+            <p class="entrep paragrafo-geral" data-i18n="contactos.lead">Seja para colaborações, projetos ou simplesmente para trocar ideias, estou sempre aberta a novas conversas.</p>
+              </div>
+            </div>
+      </div>
+
+            <!--Abaixo de L-->
+      <div class="d-block d-xxl-none d-xl-none d-lg-none">
+        <div class="row">
+              <div class="col-12">
+            <p class="entrep paragrafo-geral" data-i18n="contactos.lead">Seja para colaborações, projetos ou simplesmente para trocar ideias, estou sempre aberta a novas conversas.</p>
+              </div>
+            </div>
+      </div>
+
+        </div>
+        </div>
+  
+        <div class="row espcardcimahomecontactos">
+          <div class="col-lg-5">
+        
+        <!--EMAIL-->
+        
+        <div class="fundocardscontactos btn-style3 card p-3">
+        <div class="row">
+ 
+              <div class="col-3 d-flex justify-content-center align-self-center">
+                <p class="quadradoiconcontactos medidasbaixocontactos"><i class="bi bi-envelope coriconcontactos"></i></p>
+              </div>
+              <div class="col-7 justify-content-center align-self-center">
+                <p class="medidasbaixocontactos"><span class="txtcontactos">Email</span> <br>
+                <a class="linkcontactos medidasbaixocontactos paragrafo-geral" href="mailto:cristianadaoliveira@gmail.com">cristianadaoliveira@gmail.com</a></p>
+              </div>
+              <div class="col-2 d-flex justify-content-center align-self-center">
+                <a href="mailto:cristianadaoliveira@gmail.com" class="btn"><i class="bi bi-arrow-right-short setarodadois justify-content-end"></i></a>
+              </div>
+        </div>
+        </div>
+          </div>
+
+          <!--Telemóvel-->
+          <div class="col-lg-5">
+        <div class="fundocardscontactos btn-style3 card p-3 medidascardcontactos espteldireita">
+        <div class="row">
+  
+              <div class="col-3 d-flex justify-content-center align-self-center">
+                <p class="quadradoiconcontactos medidasbaixocontactos"><i class="bi bi-phone coriconcontactos"></i></p>
+              </div>
+              <div class="col-7 justify-content-center align-self-center">
+                <p class="medidasbaixocontactos" data-i18n="contactos.phone"><span class="txtcontactos">Telemóvel</span><br>
+                <a class="linkcontactos medidasbaixocontactos paragrafo-geral" href="tel:+351919851354">(+351) 919 851 354</a></p>
+              </div>
+              <div class="col-2 d-flex justify-content-center align-self-center">
+                <a href="tel:+351919851354" class="btn"><i class="bi bi-arrow-right-short setarodadois justify-content-end"></i></a>
+              </div>
+   
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!--Linkdin-->
+        <div class="row espcardcimahomecontactos">
+        <div class="col-12">
+          <p class="espcardcimahomecontactos paragrafo-geral" data-i18n="contactos.linkdin">
+            Encontre-me também em 
+            <a href="https://www.linkedin.com/in/cristianadaoliveira" target="_blank">
+              <i class="bi bi-linkedin iconelinkdin"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+      </div>
+      </div>
+     
+
+    </main>
+    <!--Ecrãs XXL / XL / L-->
+      <div class="d-none d-xxl-block d-xl-block d-lg-block">
+    <footer class="text-body-secondary py-5 container-fluid">
+      <div class="container">
+        <p class="float-end mb-1 txtfooter" data-i18n="footer.dois">xx</p>
+        <p class="mb-1 txtfooter" data-i18n="footer.um">xxx</p>
+      </div>
+    </footer>
+      </div>
+
+      <!--Abaixo de L-->
+      <div class="d-block d-xxl-none d-xl-none d-lg-none">
+    <footer class="text-body-secondary container-fluid">
+      <div class="container">
+        <div class="row">
+        <div class="d-flex justify-content-center txtfooter" data-i18n="footer.dois">xx</div>
+        </div>
+        <div class="row">
+        <div class="d-flex justify-content-center txtfooter" data-i18n="footer.um">xxx</div>
+        </div>
+      </div>
+    </footer>
+      </div>
+   
+    
+
+
+
+   
+
+
+        <!-- Bootstrap core JavaScript -->
+
+    <script src="js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+    <script src="js/color-modes.js"></script>
+    <!--<script src="js/alturanavbar.js"></script>-->
+    <!-- bolinha segue cursour
+    <script>
+      const ball = document.getElementById("cursor-ball");
+
+      document.addEventListener("mousemove", (e) => {
+        ball.style.left = e.clientX + "px";
+        ball.style.top = e.clientY + "px";
+      });
+    </script>
+  -->
+    <script>
+      const ball = document.getElementById("cursor-ball");
+      const offsetX = -10; // distância horizontal
+      const offsetY = -10; // distância vertical
+
+      document.addEventListener("mousemove", (e) => {
+        ball.style.left = (e.clientX + offsetX) + "px";
+        ball.style.top = (e.clientY + offsetY) + "px";
+      });
+    </script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.getElementById("navbarSupportedContent");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+
+    // Fecha o menu ao clicar em qualquer link
+    document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
+      link.addEventListener("click", function () {
+        if (window.innerWidth < 992) {  // fecha só em mobile / tablet
+          if (navbarCollapse.classList.contains("show")) {
+            navbarToggler.click(); // dispara o toggle e fecha o menu
+          }
+        }
+      });
+    });
+  });
+</script>
+    
+  </body>
+</html>
